@@ -1,11 +1,150 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<titel>Knapp</titel>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadim Haidar | Portfolio</title>
+    <meta name="description" content="Portfolio och online-CV för Nadim Haidar - Studerande Blockkedjeutvecklare.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button>Hej världen!</button>
+
+    <header>
+        <div class="header-container">
+            <span class="logo">Nadim Haidar</span>
+            <nav>
+                <ul>
+                    <li><a href="#om-mig">Om mig</a></li>
+                    <li><a href="#projekt">Projekt</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <main>
+            <section id="om-mig" class="hero-section">
+                <h1>Välkommen till min portfolio</h1>
+                <div class="profile-card">
+                    <!-- Bild med alla krävda attribut -->
+                    <img src="profil.jpg" alt="Porträttbild på Nadim Haidar" width="180" height="180" class="profile-img">
+                    <div class="profile-text">
+                        <h2>Om Mig</h2>
+                        <p>Jag heter Nadim Haidar och studerar till blockkedjeutvecklare. Jag brinner för problemlösning, utveckling och moderna webbteknologier. Detta är min portfolio där jag visar upp mina projekt och samlar information för framtida LIA-platser.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projekt">
+                <h2>Mina Projekt</h2>
+                <!-- Rutnätet för projekten ändrar layout i mobil vs desktop -->
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Projekt 1: Web3 Wallet Tracker</h3>
+                        <p>En enkel webbapplikation för att spåra plånboksadresser på Ethereum-nätverket.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Projekt 2: Data Analysis Dashboard</h3>
+                        <p>Ett visningsverktyg för datastatistik utvecklat med HTML, CSS och Python-skript.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Projekt 3: Portfolio (Inlämning 1)</h3>
+                        <p>Min första kursinlämning i HTML & CSS med responsiv layout och tillgänglighetstänk.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="kontakt">
+                <h2>Kontaktformulär</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Namn:</label>
+                            <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-post:</label>
+                            <input type="email" id="email" name="email" placeholder="din.epost@doman.se" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="website">Webbplats:</label>
+                            <input type="url" id="website" name="website" placeholder="https://dinwebbplats.se">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="07X-XXX XX XX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Kategori (Dropdown):</label>
+                        <select id="subject" name="subject">
+                            <option value="lia">LIA / Praktikförfrågan</option>
+                            <option value="jobb">Jobberbjudande</option>
+                            <option value="fraga">Allmän fråga</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Skriv ditt meddelande här..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Jag godkänner att mina kontaktuppgifter behandlas.</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Skicka meddelande</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Snabbfakta</h2>
+            <div class="aside-content">
+                <p><strong>Namn:</strong> Nadim Haidar</p>
+                <p><strong>Roll:</strong> Blockkedjeutvecklare</p>
+                <p><strong>Plats:</strong> Göteborg, Sverige</p>
+                <hr>
+                <h3>Externa Länkar</h3>
+                <p>Länk till min <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub-profil</a>.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nadim Haidar. Skapad för kursen BCU26D (Inlämningsuppgift 1).</p>
+    </footer>
+
 </body>
-</html>
+</html>  main>
+  <section id="om-mig">
+    <h2>Om Mig</h2>
+    <p>Här skriver du din presentation...</p>
+  </section>
+  <section id="projekt">
+    <h2>Mina Projekt</h2>
+    <article class="project-card">
+      <h3>Projekt 1: Web Maja Tracker</h3>
+      <p>Beskrivning av projektet...</p>
+    </article>
+    <article class="project-card">
+      <h3>Projekt 2: Data Analysis Dashboard</h3>
+      <p>Beskrivning av projektet...</p>
+    </article>
+    <article class="project-card">
+      <h3>Projekt 3: Portfolio (Inlämning 1)</h3>
+      <p>Beskrivning av projektet...</p>
+    </article>
+  </section>
+  <section id="kontakt">
+    <h2>Kontaktformulär</h2>
+  </section>
+</main>

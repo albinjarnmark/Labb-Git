@@ -1,0 +1,180 @@
+/* ==========================================
+   1. GRUNDINSTÄLLNINGAR & VARIABLER
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #f7fafc;
+  padding: 15px;
+}
+
+main, header, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   2. HEADER & NAVIGATION
+   ========================================== */
+header {
+  background-color: #1a202c;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+nav a {
+  color: #63b3ed;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   3. SEKTIONER & KORT
+   ========================================== */
+section, aside {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+h2 {
+  color: #1a202c;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.job-card, .project-card {
+  background-color: #f8fafc;
+  border-left: 4px solid #3182ce;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.job-card h3, .project-card h3 {
+  color: #2b6cb0;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+
+.company {
+  font-weight: 600;
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* ==========================================
+   4. FORMULÄR
+   ========================================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3182ce;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+/* ==========================================
+   5. FOOTER
+   ========================================== */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #a0aec0;
+  font-size: 0.85rem;
+}
+
+/* ==========================================
+   6. RESPONSIV DESIGN (DESKTOP)
+   ========================================== */
+@media (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 25px 30px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #erfarenhet, #projekt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  #erfarenhet h2, #projekt h2 {
+    grid-column: 1 / -1;
+  }
+
+  .job-card, .project-card {
+    margin-bottom: 0;
+  }
+}
